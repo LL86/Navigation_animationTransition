@@ -53,9 +53,6 @@
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cE6-qD-utv">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="154"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="154" id="iAH-dM-FCt"/>
-                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -99,38 +96,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpV-5a-wlr">
-                                <rect key="frame" x="40" y="381" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-33-Mdf">
+                                <rect key="frame" x="60" y="94" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="gcb-ib-JHg"/>
+                                    <constraint firstAttribute="width" constant="200" id="kBm-3o-HAx"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71f-nX-DLa">
+                                <rect key="frame" x="55" y="324" width="210" height="204"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="48l-qm-hJ9"/>
+                                    <constraint firstAttribute="height" constant="204" id="gpC-5x-g8t"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-33-Mdf">
-                                <rect key="frame" x="35" y="94" width="250" height="200"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="dyS-33-Mdf" secondAttribute="centerX" id="5bW-e5-agJ"/>
-                            <constraint firstItem="dyS-33-Mdf" firstAttribute="top" secondItem="0xD-Iz-kVU" secondAttribute="bottom" constant="30" id="Jcm-g1-Izs"/>
-                            <constraint firstItem="EpV-5a-wlr" firstAttribute="top" secondItem="dyS-33-Mdf" secondAttribute="bottom" constant="87" id="Kct-av-RMc"/>
-                            <constraint firstAttribute="trailing" secondItem="dyS-33-Mdf" secondAttribute="trailing" constant="35" id="QWg-Pk-Cul"/>
-                            <constraint firstAttribute="centerX" secondItem="EpV-5a-wlr" secondAttribute="centerX" id="Rws-hq-JGq"/>
-                            <constraint firstItem="EpV-5a-wlr" firstAttribute="leading" secondItem="8lS-cf-xwE" secondAttribute="leadingMargin" constant="24" id="SMN-Z5-OSQ"/>
-                            <constraint firstItem="ltF-vZ-60e" firstAttribute="top" secondItem="EpV-5a-wlr" secondAttribute="bottom" constant="59" id="r52-Yd-A1Z"/>
-                            <constraint firstItem="dyS-33-Mdf" firstAttribute="leading" secondItem="8lS-cf-xwE" secondAttribute="leading" constant="35" id="rjE-Mo-Ygl"/>
+                            <constraint firstAttribute="centerX" secondItem="71f-nX-DLa" secondAttribute="centerX" id="3Aq-fy-lNF"/>
+                            <constraint firstAttribute="centerX" secondItem="dyS-33-Mdf" secondAttribute="centerX" id="3Od-YP-z0L"/>
+                            <constraint firstItem="dyS-33-Mdf" firstAttribute="top" secondItem="0xD-Iz-kVU" secondAttribute="bottom" constant="30" id="6Wm-MP-13l"/>
+                            <constraint firstItem="dyS-33-Mdf" firstAttribute="top" secondItem="0xD-Iz-kVU" secondAttribute="bottom" constant="30" id="Tua-dA-h3d"/>
+                            <constraint firstItem="71f-nX-DLa" firstAttribute="top" secondItem="dyS-33-Mdf" secondAttribute="bottom" constant="30" id="orI-av-A3j"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qmK-zx-lp0"/>
                     <connections>
                         <outlet property="imageViewForSecond" destination="dyS-33-Mdf" id="qd7-BE-bii"/>
-                        <outlet property="textView" destination="EpV-5a-wlr" id="Uog-eq-2VE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Meg-YU-2Cs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104" y="319"/>
+            <point key="canvasLocation" x="1207" y="315"/>
         </scene>
     </scenes>
     <resources>

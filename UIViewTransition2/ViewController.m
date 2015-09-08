@@ -19,7 +19,9 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
+
     self.navigationController.delegate = self;
     UIScreenEdgePanGestureRecognizer *edgePanGestureRecognizer = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(edgePanGesture:)];
     //设置从什么边界滑入
